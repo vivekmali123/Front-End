@@ -1,0 +1,40 @@
+/* 2. Apply different visibility by an element (visibility: hidden, visible, collapse) and use 
+    different types of display for an element (display: none, inline, block, contents, list-item) */
+
+.visible {
+  visibility: visible;      /* visible */
+}
+
+.hidden {
+  visibility: hidden;      /* hidden */
+}
+
+.collapse {
+    visibility: collapse;   /* collapse */
+}
+
+p {color: red;}
+
+p.ex1 {
+    display: none;     /* none */
+}
+
+p.ex2 {
+    display: inline;   /* inline */
+}
+
+p.ex3 {
+    display: block;    /* block */
+}
+
+p.ex4 {
+    display: contents;   /* contents */
+    border: 1px solid blue;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+p.ex5 {
+    display: list-item;   /* list item */
+    list-style-position: inside;
+}

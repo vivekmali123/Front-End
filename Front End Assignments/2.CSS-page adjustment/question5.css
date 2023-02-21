@@ -1,0 +1,18 @@
+/* Q.5. A page with multiple background images for an webpage or element and define their adjustable sizes */
+
+#example {
+  background-image: url(download.jfif), url(download\ \(1\).jfif);   /* multiple background images */
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+
+#example1 {
+    background-image:  url(download\ \(1\).jfif);  
+    background-size:  contain;                         /*  adjustable size of images */
+}
+
+#example2 {
+    background-image: url(download.jfif);
+    background-size:  cover;                              /*  adjustable size of images */
+}

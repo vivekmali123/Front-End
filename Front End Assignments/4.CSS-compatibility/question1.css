@@ -1,0 +1,25 @@
+                    /* CSS 4th Assignment. */
+
+
+/* Q.1. Create a table and apply table-layout as fixed and none */
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+  } 
+  
+  th,td {
+    border: 1px solid black;
+  }
+  
+  table.none {
+    table-layout: none;              /* none */
+    width: 100%; 
+    height: 20%; 
+  }
+  
+  table.fix {
+    table-layout: fixed;            /* fixed */
+    width: 100%;  
+    height: 20%;
+  }

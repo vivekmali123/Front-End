@@ -1,0 +1,32 @@
+                       <!--  JavaScript 3rd Assignment.   -->
+
+
+<!-- Q.1. Add an event listener to a button. When we click on it should display current date and time.  -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Element Object</h1>
+<h2>The addEventListener() Method</h2>
+
+<p>Execute a function when a user clicks on a button:</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo">
+
+<script>
+const element = document.getElementById("myBtn");
+element.addEventListener("click", myFunction);
+
+const d = new Date();
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = d;
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- Q.4. Create an object "person" with properties firstname and lastname. Display these 
+    properties using 2 different ways of accessing. -->
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+    
+    <h2>JavaScript Objects</h2>
+    <p>Creating an object:</p>
+    
+    <p id="demo"></p>
+    <p id="demo1"></p> 
+    <script>
+
+    let person = {          // First way
+      firstName : "Vivek",
+      lastName  : "Mali",
+    };
+    document.getElementById("demo").innerHTML ="First way: " + person.firstName + " " + person.lastName;   
+    
+    
+    let txt = "";          // Second way
+    for (let x in person) {
+       txt += person[x] + " ";
+    };
+    document.getElementById("demo1").innerHTML ="Second way: " + txt;
+    
+    </script>
+    
+    </body>
+    </html>
+    

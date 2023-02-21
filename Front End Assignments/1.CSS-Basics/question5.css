@@ -1,0 +1,17 @@
+/*  Q.5. Develop a page with different font-styles, font-size, font-family, colors and text-align. */
+
+h1 {
+    font-style: italic;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif ;
+    color: chocolate;
+    text-align: center;
+}
+
+h2 {
+    font-style: bold;
+    font-size: medium;
+    font-family:'Courier New', Courier, monospace ;
+    color:blueviolet ;
+    text-align: right;
+}

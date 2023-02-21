@@ -1,0 +1,54 @@
+/* Q.2. Use CSS animations (name,duration,iteration-count & delay) and 
+   paginations(Hoverable,with and without spaces). */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eee;
+}   
+
+h1{
+    margin-bottom: 50px;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 300px;
+    margin: -150px;
+    background: white;
+    color: #03446A;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    animation-name: sample;                  /* name */
+    animation-duration: 2s;                  /* duration */
+    animation-delay: 5s;                     /* delay */
+    animation-iteration-count: infinite;     /* iteration-count */
+    animation-direction: alternate;          /* direction */
+}
+
+@keyframes sample {
+    0%{ border-radius: 0%;}
+    100%{ border-radius: 50%; background-color:tomato;color: white ;}
+}
+
+
+
+  .pagination1 {
+     display: inline-block;             /* Pagination */
+  }
+  
+  .pagination1 a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+  }
+  
+  .pagination1 a:hover {background-color: green;}      /* Hover */

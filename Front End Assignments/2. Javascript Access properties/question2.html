@@ -1,0 +1,61 @@
+<!-- Q.2. Invoke a function using call() and apply(). Also Spot the difference between them. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<h3>The call() method takes arguments separately.
+    <br>
+    The apply() method takes arguments as an array.
+</h3>
+<p>In this example the fulllName method of person is <b>applied</b> on person1:</p>
+
+
+<p id="demo"></p>
+
+
+<script>
+
+//apply()
+const person = {
+  fullName: function(state, country) {
+    return this.firstName + " " + this.lastName + "," + state + "," + country;
+  }
+}
+
+const person1 = {
+  firstName:"Vivek",
+  lastName: "Mali"
+}
+
+document.getElementById("demo").innerHTML = person.fullName.apply(person1, ["Maharashtra", "India"]); 
+
+</script>
+
+
+<p id="demo1"></p>
+
+
+<script>
+
+//call()
+const person2 = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+
+const person3= {
+  firstName:"Vedant",
+  lastName: "Kulkarni"
+}
+
+document.getElementById("demo1").innerHTML = person2.fullName.call(person3, "Goa", "India"); 
+
+</script>
+
+</body>
+</html>
+
+

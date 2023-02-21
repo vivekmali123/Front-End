@@ -1,0 +1,12 @@
+/* Q.4. Add padding and margin with different size and understand the difference between them. */
+
+
+#margin {
+    margin: 70px;
+    border: 1px solid #4CAF50;
+  }
+
+#padding {
+    padding: 70px;
+    border: 1px solid #4CAF50;
+  }  

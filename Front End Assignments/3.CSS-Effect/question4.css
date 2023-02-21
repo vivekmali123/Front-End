@@ -1,0 +1,8 @@
+/* Q.4. Handling Overflow using scroll. */
+
+p{
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: scroll;        /* scroll */
+}

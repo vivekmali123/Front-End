@@ -1,0 +1,53 @@
+/* Q.5. Write a program of view-port for grid, media queries, image and video */
+
+
+body {
+    background-color: tan;
+    color: black;
+  }
+  
+  /* On screens that are 992px wide or less, the background color is blue */
+  @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+      color: white;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, the background color is olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+      color: white;
+    }
+  }
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .header {
+    border: 1px solid red;
+    padding: 15px;
+  }
+  
+  .menu {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+  }
+  
+  .main {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+  }
+
+  iframe{
+    width: "420"; 
+    height: "345"; 
+    src: "https://www.youtube.com/embed/tgbNymZ7vqY";          /* video */
+  }

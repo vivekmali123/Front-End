@@ -1,0 +1,15 @@
+                      /* CSS 2nd Assignment */
+
+
+
+
+/*  1. A page which specify a black border for table and if hover on it, page should change 
+   it's colour */
+
+   table, th, td {
+    border: 1px solid;            /* border black */
+  }
+
+table:hover {
+    background-color: yellow;     /* hover */
+  }

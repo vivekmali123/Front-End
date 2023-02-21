@@ -1,0 +1,42 @@
+                        <!-- JavaScript 3rd Assignment -->
+
+<!-- Q.1. Write program using this keyword when we click on button, it should be disappear. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <body>
+    <div
+      id="box"
+      style="height: 100px; width: 100px; background-color: salmon; visibility: hidden;">
+    </div> 
+    
+    <button id="btn">Click me</button>
+    <p id="demo"></p>
+    
+    <script>
+    const person = {
+    firstName: "vivek",
+    lastName : "mali",
+    fullName : function() {
+    return this.firstName + " " + this.lastName;
+    }
+    };
+
+    
+    document.getElementById("demo").innerHTML = person.fullName();
+
+
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', () => {
+     //  hide button (still takes up space on page)
+    btn.style.visibility = 'hidden';
+
+    // show div
+    const box = document.getElementById('box');
+    box.style.visibility = 'visible';
+    });
+
+    </script>
+  </body>
+</html>

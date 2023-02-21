@@ -1,0 +1,29 @@
+<!-- Q.5. Add some more properties to an existing function using object prototypes. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p>The prototype property allows you to add new methods to objects constructors:</p>
+
+<p id="demo"></p>
+
+<script>
+function Person(first, last, age) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+}
+
+Person.prototype.profession = "Student";
+
+
+const me = new Person("Vivek", "Mali", 21);
+
+document.getElementById("demo").innerHTML = "My Profession is " + me.profession; 
+</script>
+
+</body>
+</html>

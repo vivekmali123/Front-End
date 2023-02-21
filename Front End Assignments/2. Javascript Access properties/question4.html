@@ -1,0 +1,50 @@
+<!-- Q.4. Create a Counter with the help of getter and setter accessors.  -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Getters and Setters</h2>
+
+<p>Getters and setters allow you to get and set properties via methods.</p>
+
+<p>This example uses a lang property to set the value of the language property.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+
+// SETTER 
+
+const person1 = {
+  firstName1: "Vivek",
+  lastName1: "Mali",
+  language1: "NO",
+  set lang1(value) {
+    this.language1 = value;
+  }
+};
+
+// Set a property using set:
+person1.lang1 = "Heyyyy";
+document.getElementById("demo1").innerHTML = "By Set: " + person1.language1;
+
+
+// GETTER
+
+const person2 = {
+  firstName2: "Vivek",
+  lastName2: "Vivek",
+  language2: "Hiiiiii",
+  get lang2() {
+    return this.language2;
+  }
+};
+document.getElementById("demo2").innerHTML ="By Get: " + person2.lang2;
+
+
+</script>
+
+</body>
+</html>

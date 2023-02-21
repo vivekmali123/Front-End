@@ -1,0 +1,29 @@
+<!-- Q.2. Show the javascript validation. When you click submit, the text box doesn't need to be empty. -->
+
+<html>
+
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=unicode" />
+  <meta content="CoffeeCup HTML Editor (www.coffeecup.com)" name="generator" />
+</head>
+
+<body>
+
+
+  <script language="Javascript">
+    function IsEmpty() {
+
+      if (document.form.question.value == "") {
+        alert("empty");
+      }
+      return;
+    }
+  </script>
+  Question: <input name="question" /> <br/>
+
+  <input id="insert" onclick="IsEmpty();" type="submit" value="Add Question" />
+
+</body>
+
+</html>

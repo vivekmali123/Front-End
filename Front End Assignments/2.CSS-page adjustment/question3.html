@@ -1,0 +1,29 @@
+<!-- Q.3. A long page which should have two links "click to go to bottom of page" and "click to 
+    go to top of page" . Also set their scroll-behavior to scroll smoothly. -->
+
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <link href="question3.css" rel="stylesheet">
+    </head>
+    <body>
+        
+          
+          <h1>Smooth Scroll</h1>
+          
+          <div class="main" id="top">
+            <h2>Top</h2><br><br>
+            <p>Click on the link to see the "smooth" scrolling effect.</p><br><br>
+            <a href="#bottom">click to go to bottom of page</a><br><br>                <!-- go Bottom -->
+            <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p><br><br>
+          </div>
+          
+          <div class="main" id="bottom">
+            <h2>bottom</h2><br><br>
+            <a href="#top">click to go to top of page</a><br><br>      <!-- go top -->
+          </div>
+          
+          <p><strong>Note:</strong> The scroll-behavior property is not supported in Internet Explorer.</p>
+    </body>
+    </html>    

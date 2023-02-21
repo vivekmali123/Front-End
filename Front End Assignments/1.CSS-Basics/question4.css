@@ -1,0 +1,15 @@
+/*  Q.4. Develop a page and set the height:(in pixels and %) and width:(in pixels and %) on 
+    elements.     */
+
+  h1 {  
+    border: 1px solid black;
+    height: 80px;              /*  height in pixels  */
+    width: 100px;              /*  width in pixels  */      
+  }
+
+  h2 {
+    text-align: center;
+    height: 100%;              /*  height in %  */
+    height: 100%;              /*  height in %  */
+    border: 1px solid black;
+  }

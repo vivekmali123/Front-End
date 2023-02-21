@@ -1,0 +1,33 @@
+<!-- Q.3. Write a program with FOR/IN loop. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+let text = "";
+for (let i = 0; i < cars.length; i++) {                   // For Loop.....        
+      text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+
+
+const numbers = [45, 4, 9, 16, 25];
+let txt = "";
+for (let x in numbers) {                              // For In Loop......
+  txt += numbers[x] + "<br>"; 
+}
+document.getElementById("demo2").innerHTML = txt;
+
+</script>
+
+</body>
+</html>

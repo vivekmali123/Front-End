@@ -1,0 +1,43 @@
+<!-- Q.3. Apply all of the below input restrictions
+    disabled, max, maxlength, min, readonly, required, size, value  -->
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Page Title</title>
+    </head>
+    <body>
+        
+    <form>
+        <label for="cars">Choose a car:</label>
+        <select id="cars">
+          <option value="volvo" disabled>Volvo</option>      <!-- Disable -->
+          <option value="saab">Saab</option>
+          <option value="vw">VW</option>
+          <option value="audi">Audi</option>
+        </select>
+
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>   <!-- Max -->
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" maxlength="10"><br><br>   <!-- Maxlength -->
+
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>   <!-- Min -->
+  
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" value="Norway" readonly><br><br>  <!-- readonly -->
+ 
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>   <!-- required -->
+
+        <h1 style="font-size:300%;">My Name is Vivek Mali, BTech student.</h1>    <!-- Size -->
+
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="Vivek">       <!-- value -->
+
+    </form>    
+
+    </body>
+    </html>    
